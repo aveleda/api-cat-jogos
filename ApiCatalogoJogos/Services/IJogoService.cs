@@ -1,10 +1,10 @@
-﻿using ExemploApiCatalogoJogos.InputModel;
-using ExemploApiCatalogoJogos.ViewModel;
+﻿using ApiCatalogoJogos.InputModel;
+using ApiCatalogoJogos.ViewModel;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace ExemploApiCatalogoJogos.Services
+namespace ApiCatalogoJogos.Services
 {
     public interface IJogoService : IDisposable
     {

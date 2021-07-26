@@ -4,7 +4,7 @@ using System.IO;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace ExemploApiCatalogoJogos.Middleware
+namespace ApiCatalogoJogos.Middleware
 {
     public class ExceptionMiddleware
     {

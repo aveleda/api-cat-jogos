@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ExemploApiCatalogoJogos.ViewModel
+namespace ApiCatalogoJogos.ViewModel
 {
     public class JogoViewModel
     {

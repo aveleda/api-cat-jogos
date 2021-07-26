@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace ExemploApiCatalogoJogos.InputModel
+namespace ApiCatalogoJogos.InputModel
 {
     public class JogoInputModel
     {

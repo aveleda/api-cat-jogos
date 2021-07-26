@@ -1,7 +1,7 @@
-using ExemploApiCatalogoJogos.Controllers.V1;
-using ExemploApiCatalogoJogos.Middleware;
-using ExemploApiCatalogoJogos.Repositories;
-using ExemploApiCatalogoJogos.Services;
+using ApiCatalogoJogos.Controllers.V1;
+using ApiCatalogoJogos.Middleware;
+using ApiCatalogoJogos.Repositories;
+using ApiCatalogoJogos.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -12,7 +12,7 @@ using System;
 using System.IO;
 using System.Reflection;
 
-namespace ExemploApiCatalogoJogos
+namespace ApiCatalogoJogos
 {
     public class Startup
     {
@@ -40,7 +40,7 @@ namespace ExemploApiCatalogoJogos
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "ExemploApiCatalogoJogos", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "ApiCatalogoJogos", Version = "v1" });
 
                 var basePath = AppDomain.CurrentDomain.BaseDirectory;
                 var fileName = typeof(Startup).GetTypeInfo().Assembly.GetName().Name + ".xml";
@@ -55,7 +55,7 @@ namespace ExemploApiCatalogoJogos
             {
                 app.UseDeveloperExceptionPage();
                 app.UseSwagger();
-                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ExemploApiCatalogoJogos v1"));
+                app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ApiCatalogoJogos v1"));
             }
 
             app.UseMiddleware<ExceptionMiddleware>();
